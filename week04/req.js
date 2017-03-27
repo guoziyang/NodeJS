@@ -1,5 +1,5 @@
 /**
- * http.ClientRequest对象 用法
+ * http.ClientRequest对象用法
  */
 
 var http = require('http');
