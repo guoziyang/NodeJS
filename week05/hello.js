@@ -12,7 +12,7 @@ var server = http.createServer(function (req,res) {
 
     //服务器收到请求后,返回相应的信息
     //res 服务器返回给浏览器的信息,包括状态码、响应头、网页正文
-    res.statuscode = 404;       //手工设置状态码
+    res.statusCode = 404;       //手工设置状态码
     res.setHeader('abc','123'); //手工设置响应头
     res.end('Hello World!');    //网页正文
 
