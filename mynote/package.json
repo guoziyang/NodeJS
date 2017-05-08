@@ -1,0 +1,23 @@
+{
+  "name": "webnote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gzy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "moment": "^2.18.1",
+    "mongoose": "^4.9.7",
+    "sails-mongo": "^0.12.2",
+    "sails-mysql": "^0.11.5",
+    "waterline": "^0.11.11",
+    "weui": "^1.1.2"
+  }
+}
