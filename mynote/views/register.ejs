@@ -1,0 +1,29 @@
+<%- include header %>
+
+<div class="text-center page-title">新用户注册</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 col-xs-offset-4">
+            <form method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" id="username" placeholder="用户名">
+                    <span id="username-tips" class="err-tips">用户名只能是字母、数字、下划线的组合，长度3-20个字符</span>
+                    <% if(status=='1') { %>
+                        <span id="status" class="red-tips">用户名已经存在!</span>
+                    <% } %>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="密码">
+                    <span id="password-tips" class="err-tips">密码长度不能少于6，必须同时包含数字、小写字母、大写字母</span>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="passwordRepeat" id="repassword" placeholder="确认密码">
+                    <span id="repassword-tips" class="err-tips">两次输入密码不一致</span>
+                </div>
+            </form>
+            <!--<button id="register" class="btn btn-default center-block">注册</button>-->
+            <button id="register" class="weui-btn weui-btn_primary">注册</button>
+        </div>
+    </div>
+</div>
+<%- include footer %>

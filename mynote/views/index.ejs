@@ -1,0 +1,33 @@
+<%- include header %>
+
+<div class="container">
+    <div class="row">
+        <table class="table table-striped">
+
+
+            <div class="weui-panel">
+                <div class="weui-panel__hd">我的笔记列表</div>
+                <div class="weui-panel__bd">
+                    <% notes.forEach(function (note) { %>
+                    <div class="weui-media-box weui-media-box_text">
+
+                        <h4 class="weui-media-box__title"> <a href="/detail/<%= note.id %>"><%= note.title %></a></h4>
+                        <!--笔记摘要-->
+                        <p class="weui-media-box__desc"><%= note.content.substring(0,50) %></p>
+                        <ul class="weui-media-box__info">
+                            <li class="weui-media-box__info__meta"><%= note.createTime %></li>
+                            <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">标签 <%= note.tag %></li>
+                        </ul>
+                    </div>
+
+                    <% }); %>
+                </div>
+            </div>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<%- include footer %>

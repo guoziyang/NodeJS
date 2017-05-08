@@ -1,0 +1,24 @@
+<%- include header %>
+
+<!--<div class="text-center page-title"><%= title %></div>-->
+<div class="container">
+<div class="page">
+    <div class="page__bd">
+        <article class="weui-article">
+            <h1><b><%= art.title %></b></h1>
+            <section>
+                <b>标签: </b><p class="page__desc label label-info"><%= art.tag %></p>
+                <span class="create-time">
+                        <span class="text-bold"><b>&nbsp;&nbsp;发布时间:</b></span>
+                    <%= moment(art.createTime).locale('zh-cn').format('LL HH:mm:ss') %>
+                </span>
+                <hr>
+                <section>
+                    <p><%= art.content %></p>
+                </section>
+            </section>
+        </article>
+    </div>
+</div>
+<!--</div>-->
+<%- include footer %>
